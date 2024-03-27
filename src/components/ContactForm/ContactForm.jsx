@@ -2,7 +2,7 @@ import { useFormik } from 'formik';
 import * as Yup from 'yup';
 import { useDispatch } from 'react-redux';
 import { addContact } from '../../redux/contactsSlice';
-import styles from './ContactsForm.module.css';
+import styles from './ContactForm.module.css';
 import PhoneInput from 'react-phone-number-input';
 import 'react-phone-number-input/style.css';
 import { nanoid } from 'nanoid';
@@ -43,7 +43,7 @@ const ContactForm = () => {
   });
 
   return (
-    <form onSubmit={formik.handleSubmit} className={styles.contactsForm}>
+    <form onSubmit={formik.handleSubmit} className={styles.contactForm}>
       <label className={styles.label}>
         Name
         <input
